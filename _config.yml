@@ -32,6 +32,9 @@ remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Collections and taxonomies
 collections:
