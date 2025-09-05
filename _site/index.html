@@ -10,16 +10,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A minimalist blog about technology, programming, and life." />
 <meta property="og:description" content="A minimalist blog about technology, programming, and life." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://0.0.0.0:4000/" />
+<meta property="og:url" content="http://0.0.0.0:4000/" />
 <meta property="og:site_name" content="Shivang Agrawal" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Shivang Agrawal" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A minimalist blog about technology, programming, and life.","headline":"Shivang Agrawal","name":"Shivang Agrawal","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A minimalist blog about technology, programming, and life.","headline":"Shivang Agrawal","name":"Shivang Agrawal","url":"http://0.0.0.0:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
+<link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 <body a="auto"><nav class="site-nav">
@@ -233,11 +233,11 @@
       
       
       <li>
-        <span class="post-meta">May 31, 2025</span>
-        <h3>
+        <h3 class="post-title-container">
           <a class="post-link" href="/2025/05/31/welcome-to-jekyll/">
             Welcome to Jekyll!
           </a>
+          <span class="post-meta">May 31, 2025</span>
         </h3>
         
         
@@ -257,11 +257,11 @@
         <p class="post-excerpt">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways,...</p></li>
       
       <li>
-        <span class="post-meta">Jan 25, 2025</span>
-        <h3>
+        <h3 class="post-title-container">
           <a class="post-link" href="/2025/01/25/understanding-git-basics/">
             Understanding Git: A Beginner&#39;s Guide
           </a>
+          <span class="post-meta">Jan 25, 2025</span>
         </h3>
         
         
@@ -283,11 +283,11 @@
         <p class="post-excerpt">Git is an essential tool for any developer. If you’re just starting out, it might seem intimidating, but once you understand the basics, it becomes an invaluable part of your...</p></li>
       
       <li>
-        <span class="post-meta">Jan 20, 2025</span>
-        <h3>
+        <h3 class="post-title-container">
           <a class="post-link" href="/2025/01/20/setting-up-development-environment/">
             Setting Up the Perfect Development Environment
           </a>
+          <span class="post-meta">Jan 20, 2025</span>
         </h3>
         
         
@@ -310,11 +310,11 @@
 </p></li>
       
       <li>
-        <span class="post-meta">Jan 15, 2025</span>
-        <h3>
+        <h3 class="post-title-container">
           <a class="post-link" href="/2025/01/15/my-coding-journey/">
             My Coding Journey: From Beginner to Developer
           </a>
+          <span class="post-meta">Jan 15, 2025</span>
         </h3>
         
         
@@ -367,8 +367,8 @@
 .post-meta {
   font-size: 0.875rem;
   color: #6a737d;
-  display: block;
-  margin-bottom: 0.5rem;
+  font-weight: normal;
+  flex-shrink: 0;
 }
 
 .post-link {
@@ -423,6 +423,14 @@
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #e1e4e8;
   padding-bottom: 0.5rem;
+}
+
+.post-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  margin-bottom: 0.5rem;
 }
 </style>
 
