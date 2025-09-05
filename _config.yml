@@ -28,9 +28,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: no-style-please
+remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Collections and taxonomies
 collections:
