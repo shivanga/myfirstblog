@@ -1,0 +1,117 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~ 
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        • {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+    </p>
+  </header>
+
+  {% if page.tags.size > 0 %}
+  <div class="post-tags">
+    <div class="tags-header">
+      <strong>Tags:</strong>
+      <a href="{{ '/tags/' | relative_url }}" class="all-tags-link">View all tags →</a>
+    </div>
+    <div class="tags-list">
+      {% for tag in page.tags %}
+        {% assign tag_slug = tag | slugify %}
+        <a href="{{ '/tags/#' | append: tag_slug | relative_url }}" class="tag-link">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% include related_posts.html %}
+
+  {%- if site.giscus.repo -%}
+    {% include giscus_comments.html %}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<style>
+.post-tags {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.all-tags-link {
+  font-size: 0.8rem;
+  color: #6a737d;
+  text-decoration: none;
+}
+
+.all-tags-link:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-link {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.tag-link:hover {
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+}
+
+.giscus-comments {
+  margin-top: 2rem;
+}
+
+.giscus-comments h3 {
+  margin-bottom: 1rem;
+}
+</style>

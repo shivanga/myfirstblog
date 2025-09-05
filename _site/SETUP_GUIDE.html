@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>🚀 Complete Setup Guide for Your Jekyll Blog</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="🚀 Complete Setup Guide for Your Jekyll Blog" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A minimalist blog about technology, programming, and life." />
+<meta property="og:description" content="A minimalist blog about technology, programming, and life." />
+<link rel="canonical" href="http://localhost:4000/SETUP_GUIDE.html" />
+<meta property="og:url" content="http://localhost:4000/SETUP_GUIDE.html" />
+<meta property="og:site_name" content="Shivang Agrawal" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="🚀 Complete Setup Guide for Your Jekyll Blog" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A minimalist blog about technology, programming, and life.","headline":"🚀 Complete Setup Guide for Your Jekyll Blog","url":"http://localhost:4000/SETUP_GUIDE.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto"><nav class="site-nav">
+  <div class="nav-container">
+    <!-- Site Title/Logo -->
+    <div class="nav-brand">
+      <a href="/" class="site-title">Shivang Agrawal</a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="/" class="nav-link ">Home</a>
+      
+      
+        
+          
+          
+            <a href="/about/" class="nav-link ">
+              About
+            </a>
+          
+        
+          
+          
+            <a href="/tags/" class="nav-link ">
+              Tags
+            </a>
+          
+        
+      
+      
+      <!-- RSS Feed -->
+      <a href="/feed.xml" class="nav-link rss-link" title="RSS Feed">
+        <span class="rss-icon">📡</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.site-nav {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  margin-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292e;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0366d6;
+  background-color: #f1f8ff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #0366d6;
+}
+
+.rss-link {
+  padding: 0.25rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.rss-link:hover {
+  background-color: #0366d6;
+  border-color: #0366d6;
+}
+
+.rss-link:hover .rss-icon {
+  filter: brightness(0) invert(1);
+}
+
+.rss-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Dark mode support (if theme supports it) */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background-color: #0d1117;
+    border-bottom-color: #30363d;
+  }
+  
+  .site-title {
+    color: #f0f6fc;
+  }
+  
+  .site-title:hover {
+    color: #58a6ff;
+  }
+  
+  .nav-link {
+    color: #8b949e;
+  }
+  
+  .nav-link:hover {
+    color: #58a6ff;
+    background-color: #161b22;
+  }
+  
+  .nav-link.active {
+    color: #58a6ff;
+  }
+  
+  .nav-link.active::after {
+    background-color: #58a6ff;
+  }
+  
+  .rss-link {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .rss-link:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+  }
+}
+</style>
+<main class="page-content" aria-label="Content">
+      <div class="w">
+        
+<div class="breadcrumb">
+  <a href="/" class="breadcrumb-link">← Back to Home</a>
+</div>
+
+<style>
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.breadcrumb-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.breadcrumb-link:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .breadcrumb {
+    border-bottom-color: #30363d;
+  }
+  
+  .breadcrumb-link {
+    color: #8b949e;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #58a6ff;
+  }
+}
+</style>
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">🚀 Complete Setup Guide for Your Jekyll Blog</h1>
+  </header>
+
+  <div class="page-content">
+    <h1 id="-complete-setup-guide-for-your-jekyll-blog">🚀 Complete Setup Guide for Your Jekyll Blog</h1>
+
+<p>Your minimalist Jekyll blog is now ready! Follow this guide to get it running on GitHub Pages.</p>
+
+<h2 id="-whats-been-set-up">📋 What’s Been Set Up</h2>
+
+<p>✅ <strong>Minimalist Theme</strong>: “no-style-please” theme for clean, fast loading<br />
+✅ <strong>Chronological Posts</strong>: Homepage displays posts in reverse chronological order<br />
+✅ <strong>Tagging System</strong>: Full tagging functionality with dedicated tags page<br />
+✅ <strong>Comments Ready</strong>: Giscus integration for GitHub Discussions-based comments<br />
+✅ <strong>GitHub Pages Compatible</strong>: Configured for seamless GitHub Pages deployment<br />
+✅ <strong>Sample Content</strong>: 4 sample blog posts with various tags<br />
+✅ <strong>Responsive Design</strong>: Works perfectly on all devices</p>
+
+<h2 id="️-immediate-setup-steps">🛠️ Immediate Setup Steps</h2>
+
+<h3 id="1-update-personal-information">1. Update Personal Information</h3>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> and update these fields:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Your Name</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">your-email@example.com</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Your blog description</span>
+<span class="na">github_username</span><span class="pi">:</span> <span class="s">your-github-username</span>
+<span class="na">twitter_username</span><span class="pi">:</span> <span class="s">your-twitter-handle</span>  <span class="c1"># optional</span>
+</code></pre></div></div>
+
+<h3 id="2-update-about-page">2. Update About Page</h3>
+
+<p>Edit <code class="language-plaintext highlighter-rouge">about.markdown</code> and replace placeholder information with your details:</p>
+<ul>
+  <li>GitHub username</li>
+  <li>Email address</li>
+  <li>Twitter handle</li>
+  <li>Personal bio and interests</li>
+</ul>
+
+<h3 id="3-github-repository-setup">3. GitHub Repository Setup</h3>
+
+<ol>
+  <li><strong>Create a new GitHub repository</strong> (or use existing one)</li>
+  <li><strong>Push your code</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial blog setup"</span>
+git push origin main
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="4-enable-github-pages">4. Enable GitHub Pages</h3>
+
+<ol>
+  <li>Go to your repository on GitHub</li>
+  <li>Click <strong>Settings</strong> → <strong>Pages</strong></li>
+  <li>Under “Source”, select <strong>“Deploy from a branch”</strong></li>
+  <li>Choose <strong>“main”</strong> branch</li>
+  <li>Click <strong>Save</strong></li>
+</ol>
+
+<p>Your blog will be available at: <code class="language-plaintext highlighter-rouge">https://your-username.github.io/your-repo-name</code></p>
+
+<h3 id="5-enable-comments-optional-but-recommended">5. Enable Comments (Optional but Recommended)</h3>
+
+<ol>
+  <li><strong>Enable Discussions</strong> in your GitHub repository:
+    <ul>
+      <li>Go to Settings → General</li>
+      <li>Scroll to “Features” section</li>
+      <li>Check “Discussions”</li>
+    </ul>
+  </li>
+  <li><strong>Configure Giscus</strong>:
+    <ul>
+      <li>Visit <a href="https://giscus.app/">giscus.app</a></li>
+      <li>Enter your repository details</li>
+      <li>Copy the generated configuration</li>
+      <li>Update <code class="language-plaintext highlighter-rouge">_config.yml</code>:</li>
+    </ul>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">giscus</span><span class="pi">:</span>
+  <span class="na">repo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">your-username/your-repo-name"</span>
+  <span class="na">repo_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">R_kgDOxxxxxxx"</span>  <span class="c1"># from giscus.app</span>
+  <span class="na">category</span><span class="pi">:</span> <span class="s2">"</span><span class="s">General"</span>
+  <span class="na">category_id</span><span class="pi">:</span> <span class="s2">"</span><span class="s">DIC_kwDOxxxxxxx"</span>  <span class="c1"># from giscus.app</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="-writing-your-first-post">📝 Writing Your First Post</h2>
+
+<ol>
+  <li>
+    <p><strong>Create a new file</strong> in <code class="language-plaintext highlighter-rouge">_posts/</code> with format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code></p>
+  </li>
+  <li><strong>Add front matter</strong>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Post</span><span class="nv"> </span><span class="s">Title"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2025-01-30 10:00:00 +0530</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">tag1</span><span class="pi">,</span> <span class="nv">tag2</span><span class="pi">,</span> <span class="nv">tag3</span><span class="pi">]</span>
+<span class="nn">---</span>
+   
+<span class="s">Your post content here...</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Write in Markdown</strong> - Jekyll supports full Markdown syntax</li>
+</ol>
+
+<h2 id="-customization-options">🎨 Customization Options</h2>
+
+<h3 id="adding-new-pages">Adding New Pages</h3>
+<ul>
+  <li>Create <code class="language-plaintext highlighter-rouge">.md</code> files in root directory</li>
+  <li>Add to navigation by updating <code class="language-plaintext highlighter-rouge">header_pages</code> in <code class="language-plaintext highlighter-rouge">_config.yml</code></li>
+</ul>
+
+<h3 id="styling">Styling</h3>
+<ul>
+  <li>Override theme styles in <code class="language-plaintext highlighter-rouge">_sass/</code> directory</li>
+  <li>Add custom CSS to layout files</li>
+  <li>Modify existing layouts in <code class="language-plaintext highlighter-rouge">_layouts/</code></li>
+</ul>
+
+<h3 id="features">Features</h3>
+<ul>
+  <li><strong>Dark Mode</strong>: Automatic based on system preference</li>
+  <li><strong>Fast Loading</strong>: Minimal CSS and optimized assets</li>
+  <li><strong>SEO Friendly</strong>: Proper meta tags and structured data</li>
+  <li><strong>RSS Feed</strong>: Automatic feed generation at <code class="language-plaintext highlighter-rouge">/feed.xml</code></li>
+</ul>
+
+<h2 id="-local-development">🔧 Local Development</h2>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Ruby (2.7 or higher)</li>
+  <li>Bundler gem</li>
+</ul>
+
+<h3 id="setup">Setup</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install dependencies</span>
+bundle <span class="nb">install</span>
+
+<span class="c"># Start local server</span>
+bundle <span class="nb">exec </span>jekyll serve
+
+<span class="c"># Visit your blog</span>
+open http://localhost:4000
+</code></pre></div></div>
+
+<h3 id="development-tips">Development Tips</h3>
+<ul>
+  <li>Changes auto-reload (except <code class="language-plaintext highlighter-rouge">_config.yml</code>)</li>
+  <li>Drafts go in <code class="language-plaintext highlighter-rouge">_drafts/</code> folder</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">--drafts</code> flag to preview drafts locally</li>
+</ul>
+
+<h2 id="-file-structure-overview">📁 File Structure Overview</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── _config.yml              # Main configuration
+├── _posts/                  # Blog posts
+│   ├── 2025-01-15-my-coding-journey.md
+│   ├── 2025-01-20-setting-up-development-environment.md
+│   ├── 2025-01-25-understanding-git-basics.md
+│   └── 2025-05-31-welcome-to-jekyll.markdown
+├── _layouts/                # Custom layouts
+│   ├── home.html           # Homepage layout
+│   └── post.html           # Blog post layout
+├── _includes/               # Reusable components
+│   └── giscus_comments.html # Comments component
+├── .github/workflows/       # GitHub Actions
+│   └── jekyll.yml          # Auto-deployment
+├── tags.md                  # Tags page
+├── about.markdown           # About page
+├── index.markdown           # Homepage
+├── Gemfile                  # Ruby dependencies
+└── README.md               # Documentation
+</code></pre></div></div>
+
+<h2 id="-deployment">🚀 Deployment</h2>
+
+<h3 id="automatic-deployment">Automatic Deployment</h3>
+<ul>
+  <li>GitHub Actions workflow is configured</li>
+  <li>Pushes to <code class="language-plaintext highlighter-rouge">main</code> branch trigger automatic deployment</li>
+  <li>No manual intervention required</li>
+</ul>
+
+<h3 id="manual-deployment">Manual Deployment</h3>
+<p>If you prefer manual deployment:</p>
+<ol>
+  <li>Disable GitHub Actions workflow</li>
+  <li>Use GitHub Pages source: “Deploy from a branch”</li>
+  <li>Push to <code class="language-plaintext highlighter-rouge">main</code> branch</li>
+</ol>
+
+<h2 id="-next-steps">🎯 Next Steps</h2>
+
+<ol>
+  <li><strong>Write your first post</strong> - Replace sample posts with your content</li>
+  <li><strong>Customize the about page</strong> - Make it personal</li>
+  <li><strong>Set up comments</strong> - Enable community engagement</li>
+  <li><strong>Share your blog</strong> - Start building your audience</li>
+  <li><strong>Regular posting</strong> - Consistency is key to growing readership</li>
+</ol>
+
+<h2 id="-troubleshooting">🆘 Troubleshooting</h2>
+
+<h3 id="common-issues">Common Issues</h3>
+
+<p><strong>Blog not loading on GitHub Pages:</strong></p>
+<ul>
+  <li>Check repository settings → Pages</li>
+  <li>Ensure <code class="language-plaintext highlighter-rouge">main</code> branch is selected</li>
+  <li>Wait 5-10 minutes for deployment</li>
+</ul>
+
+<p><strong>Comments not working:</strong></p>
+<ul>
+  <li>Verify Discussions are enabled</li>
+  <li>Double-check Giscus configuration</li>
+  <li>Ensure repository is public</li>
+</ul>
+
+<p><strong>Local development issues:</strong></p>
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code> after any Gemfile changes</li>
+  <li>Restart server after <code class="language-plaintext highlighter-rouge">_config.yml</code> changes</li>
+  <li>Check Ruby version compatibility</li>
+</ul>
+
+<h3 id="getting-help">Getting Help</h3>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/">Jekyll Documentation</a></li>
+  <li><a href="https://docs.github.com/en/pages">GitHub Pages Documentation</a></li>
+  <li><a href="https://giscus.app/">Giscus Documentation</a></li>
+</ul>
+
+<h2 id="-growing-your-blog">📈 Growing Your Blog</h2>
+
+<h3 id="content-strategy">Content Strategy</h3>
+<ul>
+  <li>Write consistently (weekly/bi-weekly)</li>
+  <li>Focus on your expertise areas</li>
+  <li>Engage with your audience through comments</li>
+  <li>Share posts on social media</li>
+</ul>
+
+<h3 id="seo-tips">SEO Tips</h3>
+<ul>
+  <li>Use descriptive titles</li>
+  <li>Add relevant tags</li>
+  <li>Write meta descriptions</li>
+  <li>Include internal links</li>
+</ul>
+
+<h3 id="community-building">Community Building</h3>
+<ul>
+  <li>Respond to comments promptly</li>
+  <li>Engage with other developers’ blogs</li>
+  <li>Share valuable, actionable content</li>
+  <li>Be authentic and personal</li>
+</ul>
+
+<hr />
+
+<p><strong>Congratulations! 🎉</strong> Your minimalist blog is ready to go. Start writing and sharing your knowledge with the world!</p>
+
+<p><em>Need help? Feel free to open an issue in your repository or reach out to the community.</em></p>
+
+  </div>
+</article>
+
+<style>
+.page {
+  max-width: none;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 0.5rem;
+}
+
+.page-content {
+  line-height: 1.6;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .page-title {
+    border-bottom-color: #30363d;
+  }
+}
+</style>
+
+      </div>
+    </main>
+  </body>
+</html>

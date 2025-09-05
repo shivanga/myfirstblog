@@ -1,0 +1,42 @@
+{% unless page.url == "/" %}
+<div class="breadcrumb">
+  <a href="{{ '/' | relative_url }}" class="breadcrumb-link">← Back to Home</a>
+</div>
+
+<style>
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.breadcrumb-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.breadcrumb-link:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .breadcrumb {
+    border-bottom-color: #30363d;
+  }
+  
+  .breadcrumb-link {
+    color: #8b949e;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #58a6ff;
+  }
+}
+</style>
+{% endunless %}

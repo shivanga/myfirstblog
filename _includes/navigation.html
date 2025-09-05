@@ -1,0 +1,193 @@
+<nav class="site-nav">
+  <div class="nav-container">
+    <!-- Site Title/Logo -->
+    <div class="nav-brand">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title | escape }}</a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+      
+      {% if site.header_pages %}
+        {% for path in site.header_pages %}
+          {% assign my_page = site.pages | where: "path", path | first %}
+          {% if my_page.title %}
+            <a href="{{ my_page.url | relative_url }}" class="nav-link {% if page.url == my_page.url %}active{% endif %}">
+              {{ my_page.title | escape }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      
+      <!-- RSS Feed -->
+      <a href="{{ '/feed.xml' | relative_url }}" class="nav-link rss-link" title="RSS Feed">
+        <span class="rss-icon">📡</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.site-nav {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  margin-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292e;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0366d6;
+  background-color: #f1f8ff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #0366d6;
+}
+
+.rss-link {
+  padding: 0.25rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.rss-link:hover {
+  background-color: #0366d6;
+  border-color: #0366d6;
+}
+
+.rss-link:hover .rss-icon {
+  filter: brightness(0) invert(1);
+}
+
+.rss-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Dark mode support (if theme supports it) */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background-color: #0d1117;
+    border-bottom-color: #30363d;
+  }
+  
+  .site-title {
+    color: #f0f6fc;
+  }
+  
+  .site-title:hover {
+    color: #58a6ff;
+  }
+  
+  .nav-link {
+    color: #8b949e;
+  }
+  
+  .nav-link:hover {
+    color: #58a6ff;
+    background-color: #161b22;
+  }
+  
+  .nav-link.active {
+    color: #58a6ff;
+  }
+  
+  .nav-link.active::after {
+    background-color: #58a6ff;
+  }
+  
+  .rss-link {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .rss-link:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+  }
+}
+</style>

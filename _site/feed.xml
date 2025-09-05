@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-05T12:42:49+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Shivang Agrawal</title><subtitle>A minimalist blog about technology, programming, and life.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/2025/05/31/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-05-31T08:54:08+05:30</published><updated>2025-05-31T08:54:08+05:30</updated><id>http://localhost:4000/2025/05/31/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2025/05/31/welcome-to-jekyll/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><category term="jekyll" /><category term="tutorial" /><category term="getting-started" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Understanding Git: A Beginner’s Guide</title><link href="http://localhost:4000/2025/01/25/understanding-git-basics/" rel="alternate" type="text/html" title="Understanding Git: A Beginner’s Guide" /><published>2025-01-25T09:15:00+05:30</published><updated>2025-01-25T09:15:00+05:30</updated><id>http://localhost:4000/2025/01/25/understanding-git-basics</id><content type="html" xml:base="http://localhost:4000/2025/01/25/understanding-git-basics/"><![CDATA[<p>Git is an essential tool for any developer. If you’re just starting out, it might seem intimidating, but once you understand the basics, it becomes an invaluable part of your workflow.</p>
+
+<h2 id="what-is-git">What is Git?</h2>
+
+<p>Git is a distributed version control system that helps you track changes in your code over time. Think of it as a sophisticated “undo” system that also allows multiple people to work on the same project.</p>
+
+<h2 id="essential-git-commands">Essential Git Commands</h2>
+
+<p>Here are the commands you’ll use most frequently:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Initialize a new repository</span>
+git init
+
+<span class="c"># Add files to staging area</span>
+git add <span class="nb">.</span>
+
+<span class="c"># Commit changes</span>
+git commit <span class="nt">-m</span> <span class="s2">"Your commit message"</span>
+
+<span class="c"># Check status</span>
+git status
+
+<span class="c"># View commit history</span>
+git log
+
+<span class="c"># Create a new branch</span>
+git branch feature-name
+
+<span class="c"># Switch to a branch</span>
+git checkout feature-name
+
+<span class="c"># Merge branches</span>
+git merge feature-name
+</code></pre></div></div>
+
+<h2 id="best-practices">Best Practices</h2>
+
+<ol>
+  <li><strong>Write meaningful commit messages</strong> - Your future self will thank you</li>
+  <li><strong>Commit often</strong> - Small, focused commits are easier to understand</li>
+  <li><strong>Use branches</strong> - Keep your main branch stable</li>
+  <li><strong>Pull before pushing</strong> - Stay up to date with remote changes</li>
+</ol>
+
+<h2 id="common-workflows">Common Workflows</h2>
+
+<h3 id="basic-workflow">Basic Workflow</h3>
+<ol>
+  <li>Make changes to your code</li>
+  <li><code class="language-plaintext highlighter-rouge">git add .</code> to stage changes</li>
+  <li><code class="language-plaintext highlighter-rouge">git commit -m "Description of changes"</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git push</code> to upload to remote repository</li>
+</ol>
+
+<h3 id="feature-branch-workflow">Feature Branch Workflow</h3>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">git checkout -b new-feature</code></li>
+  <li>Make your changes</li>
+  <li>Commit and push the branch</li>
+  <li>Create a pull request</li>
+  <li>Merge after review</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Git might seem complex at first, but mastering these basics will make you a more effective developer. Practice these commands, and soon they’ll become second nature.</p>
+
+<p>What Git workflow do you prefer? Share your tips in the comments!</p>]]></content><author><name></name></author><category term="git" /><category term="version-control" /><category term="tutorial" /><category term="beginner" /><summary type="html"><![CDATA[Git is an essential tool for any developer. If you’re just starting out, it might seem intimidating, but once you understand the basics, it becomes an invaluable part of your workflow.]]></summary></entry><entry><title type="html">Setting Up the Perfect Development Environment</title><link href="http://localhost:4000/2025/01/20/setting-up-development-environment/" rel="alternate" type="text/html" title="Setting Up the Perfect Development Environment" /><published>2025-01-20T14:30:00+05:30</published><updated>2025-01-20T14:30:00+05:30</updated><id>http://localhost:4000/2025/01/20/setting-up-development-environment</id><content type="html" xml:base="http://localhost:4000/2025/01/20/setting-up-development-environment/"><![CDATA[<p>A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace.</p>
+
+<h2 id="essential-tools">Essential Tools</h2>
+
+<h3 id="code-editor">Code Editor</h3>
+<p>I recommend <strong>VS Code</strong> for its excellent extension ecosystem and built-in features:</p>
+<ul>
+  <li>Syntax highlighting</li>
+  <li>Integrated terminal</li>
+  <li>Git integration</li>
+  <li>Debugging support</li>
+</ul>
+
+<h3 id="terminal-setup">Terminal Setup</h3>
+<p>A good terminal setup includes:</p>
+<ul>
+  <li><strong>Oh My Zsh</strong> for enhanced shell experience</li>
+  <li><strong>Homebrew</strong> (macOS) or <strong>apt</strong> (Linux) for package management</li>
+  <li><strong>Git</strong> for version control</li>
+</ul>
+
+<h2 id="productivity-tips">Productivity Tips</h2>
+
+<ol>
+  <li><strong>Learn keyboard shortcuts</strong> - They save countless hours</li>
+  <li><strong>Use code snippets</strong> - Create templates for common patterns</li>
+  <li><strong>Set up linting</strong> - Catch errors before they become problems</li>
+  <li><strong>Automate repetitive tasks</strong> - Write scripts for common workflows</li>
+</ol>
+
+<h2 id="my-current-setup">My Current Setup</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># My favorite VS Code extensions</span>
+- Prettier
+- ESLint
+- GitLens
+- Bracket Pair Colorizer
+- Live Server
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The time invested in setting up your development environment pays dividends in increased productivity and reduced frustration. What tools do you find essential in your workflow?</p>]]></content><author><name></name></author><category term="tools" /><category term="productivity" /><category term="setup" /><category term="development" /><summary type="html"><![CDATA[A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace.]]></summary></entry><entry><title type="html">My Coding Journey: From Beginner to Developer</title><link href="http://localhost:4000/2025/01/15/my-coding-journey/" rel="alternate" type="text/html" title="My Coding Journey: From Beginner to Developer" /><published>2025-01-15T10:00:00+05:30</published><updated>2025-01-15T10:00:00+05:30</updated><id>http://localhost:4000/2025/01/15/my-coding-journey</id><content type="html" xml:base="http://localhost:4000/2025/01/15/my-coding-journey/"><![CDATA[<p>Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way.</p>
+
+<h2 id="the-beginning">The Beginning</h2>
+
+<p>Like many developers, I started with simple “Hello World” programs. The excitement of seeing text appear on screen after writing just a few lines of code was incredible.</p>
+
+<h2 id="key-lessons-learned">Key Lessons Learned</h2>
+
+<ol>
+  <li><strong>Consistency beats intensity</strong> - Coding a little every day is better than marathon sessions</li>
+  <li><strong>Build projects</strong> - Theory is important, but building real projects teaches you the most</li>
+  <li><strong>Don’t be afraid to ask for help</strong> - The programming community is generally very supportive</li>
+  <li><strong>Read other people’s code</strong> - You learn different approaches and best practices</li>
+</ol>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>I’m excited to continue learning and sharing my experiences through this blog. Stay tuned for more posts about specific technologies, project walkthroughs, and coding tips!</p>
+
+<hr />
+
+<p><em>What was your first programming experience like? I’d love to hear about it in the comments below.</em></p>]]></content><author><name></name></author><category term="programming" /><category term="personal" /><category term="career" /><category term="learning" /><summary type="html"><![CDATA[Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way.]]></summary></entry></feed>

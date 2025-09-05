@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Shivang Agrawal</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Shivang Agrawal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A minimalist blog about technology, programming, and life." />
+<meta property="og:description" content="A minimalist blog about technology, programming, and life." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Shivang Agrawal" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Shivang Agrawal" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"A minimalist blog about technology, programming, and life.","headline":"Shivang Agrawal","name":"Shivang Agrawal","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto"><nav class="site-nav">
+  <div class="nav-container">
+    <!-- Site Title/Logo -->
+    <div class="nav-brand">
+      <a href="/" class="site-title">Shivang Agrawal</a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="/" class="nav-link active">Home</a>
+      
+      
+        
+          
+          
+            <a href="/about/" class="nav-link ">
+              About
+            </a>
+          
+        
+          
+          
+            <a href="/tags/" class="nav-link ">
+              Tags
+            </a>
+          
+        
+      
+      
+      <!-- RSS Feed -->
+      <a href="/feed.xml" class="nav-link rss-link" title="RSS Feed">
+        <span class="rss-icon">📡</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.site-nav {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  margin-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292e;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0366d6;
+  background-color: #f1f8ff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #0366d6;
+}
+
+.rss-link {
+  padding: 0.25rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.rss-link:hover {
+  background-color: #0366d6;
+  border-color: #0366d6;
+}
+
+.rss-link:hover .rss-icon {
+  filter: brightness(0) invert(1);
+}
+
+.rss-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Dark mode support (if theme supports it) */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background-color: #0d1117;
+    border-bottom-color: #30363d;
+  }
+  
+  .site-title {
+    color: #f0f6fc;
+  }
+  
+  .site-title:hover {
+    color: #58a6ff;
+  }
+  
+  .nav-link {
+    color: #8b949e;
+  }
+  
+  .nav-link:hover {
+    color: #58a6ff;
+    background-color: #161b22;
+  }
+  
+  .nav-link.active {
+    color: #58a6ff;
+  }
+  
+  .nav-link.active::after {
+    background-color: #58a6ff;
+  }
+  
+  .rss-link {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .rss-link:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+  }
+}
+</style>
+<main class="page-content" aria-label="Content">
+      <div class="w">
+        <div class="home">
+
+
+  
+    <h2 class="post-list-heading">Recent Posts</h2>
+    <ul class="post-list">
+      
+      
+      <li>
+        <span class="post-meta">May 31, 2025</span>
+        <h3>
+          <a class="post-link" href="/2025/05/31/welcome-to-jekyll/">
+            Welcome to Jekyll!
+          </a>
+        </h3>
+        
+        
+        <div class="post-tags-preview">
+          
+            
+            <a href="/tags/#jekyll" class="tag-preview">#jekyll</a>
+          
+            
+            <a href="/tags/#tutorial" class="tag-preview">#tutorial</a>
+          
+            
+            <a href="/tags/#getting-started" class="tag-preview">#getting-started</a>
+          
+          
+        </div>
+        <p class="post-excerpt">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways,...</p></li>
+      
+      <li>
+        <span class="post-meta">Jan 25, 2025</span>
+        <h3>
+          <a class="post-link" href="/2025/01/25/understanding-git-basics/">
+            Understanding Git: A Beginner&#39;s Guide
+          </a>
+        </h3>
+        
+        
+        <div class="post-tags-preview">
+          
+            
+            <a href="/tags/#git" class="tag-preview">#git</a>
+          
+            
+            <a href="/tags/#version-control" class="tag-preview">#version-control</a>
+          
+            
+            <a href="/tags/#tutorial" class="tag-preview">#tutorial</a>
+          
+          
+            <a href="/tags/" class="tag-preview tag-more">+1 more</a>
+          
+        </div>
+        <p class="post-excerpt">Git is an essential tool for any developer. If you’re just starting out, it might seem intimidating, but once you understand the basics, it becomes an invaluable part of your...</p></li>
+      
+      <li>
+        <span class="post-meta">Jan 20, 2025</span>
+        <h3>
+          <a class="post-link" href="/2025/01/20/setting-up-development-environment/">
+            Setting Up the Perfect Development Environment
+          </a>
+        </h3>
+        
+        
+        <div class="post-tags-preview">
+          
+            
+            <a href="/tags/#tools" class="tag-preview">#tools</a>
+          
+            
+            <a href="/tags/#productivity" class="tag-preview">#productivity</a>
+          
+            
+            <a href="/tags/#setup" class="tag-preview">#setup</a>
+          
+          
+            <a href="/tags/" class="tag-preview tag-more">+1 more</a>
+          
+        </div>
+        <p class="post-excerpt">A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace.
+
+</p></li>
+      
+      <li>
+        <span class="post-meta">Jan 15, 2025</span>
+        <h3>
+          <a class="post-link" href="/2025/01/15/my-coding-journey/">
+            My Coding Journey: From Beginner to Developer
+          </a>
+        </h3>
+        
+        
+        <div class="post-tags-preview">
+          
+            
+            <a href="/tags/#programming" class="tag-preview">#programming</a>
+          
+            
+            <a href="/tags/#personal" class="tag-preview">#personal</a>
+          
+            
+            <a href="/tags/#career" class="tag-preview">#career</a>
+          
+          
+            <a href="/tags/" class="tag-preview tag-more">+1 more</a>
+          
+        </div>
+        <p class="post-excerpt">Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned...</p></li>
+      
+    </ul>
+
+    <p class="feed-subscribe">
+      <a href="/feed.xml">
+        <svg class="svg-icon orange">
+          <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+        </svg><span>Subscribe</span>
+      </a>
+    </p>
+  
+
+</div>
+
+<style>
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list > li {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: #6a737d;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+.post-tags-preview {
+  margin: 0.5rem 0;
+}
+
+.tag-preview {
+  font-size: 0.8rem;
+  color: #0366d6;
+  background-color: #f1f8ff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  margin-right: 0.3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tag-preview:hover {
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+}
+
+.tag-more {
+  background-color: #f6f8fa;
+  color: #6a737d;
+}
+
+.tag-more:hover {
+  background-color: #6a737d;
+  color: white;
+}
+
+.post-excerpt {
+  color: #6a737d;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.post-list-heading {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 0.5rem;
+}
+</style>
+
+      </div>
+    </main>
+  </body>
+</html>

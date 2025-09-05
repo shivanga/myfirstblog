@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>My Coding Journey: From Beginner to Developer</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="My Coding Journey: From Beginner to Developer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way." />
+<meta property="og:description" content="Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way." />
+<link rel="canonical" href="http://localhost:4000/2025/01/15/my-coding-journey/" />
+<meta property="og:url" content="http://localhost:4000/2025/01/15/my-coding-journey/" />
+<meta property="og:site_name" content="Shivang Agrawal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-15T10:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="My Coding Journey: From Beginner to Developer" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-15T10:00:00+05:30","datePublished":"2025-01-15T10:00:00+05:30","description":"Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way.","headline":"My Coding Journey: From Beginner to Developer","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/01/15/my-coding-journey/"},"url":"http://localhost:4000/2025/01/15/my-coding-journey/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto"><nav class="site-nav">
+  <div class="nav-container">
+    <!-- Site Title/Logo -->
+    <div class="nav-brand">
+      <a href="/" class="site-title">Shivang Agrawal</a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="/" class="nav-link ">Home</a>
+      
+      
+        
+          
+          
+            <a href="/about/" class="nav-link ">
+              About
+            </a>
+          
+        
+          
+          
+            <a href="/tags/" class="nav-link ">
+              Tags
+            </a>
+          
+        
+      
+      
+      <!-- RSS Feed -->
+      <a href="/feed.xml" class="nav-link rss-link" title="RSS Feed">
+        <span class="rss-icon">📡</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.site-nav {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  margin-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292e;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0366d6;
+  background-color: #f1f8ff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #0366d6;
+}
+
+.rss-link {
+  padding: 0.25rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.rss-link:hover {
+  background-color: #0366d6;
+  border-color: #0366d6;
+}
+
+.rss-link:hover .rss-icon {
+  filter: brightness(0) invert(1);
+}
+
+.rss-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Dark mode support (if theme supports it) */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background-color: #0d1117;
+    border-bottom-color: #30363d;
+  }
+  
+  .site-title {
+    color: #f0f6fc;
+  }
+  
+  .site-title:hover {
+    color: #58a6ff;
+  }
+  
+  .nav-link {
+    color: #8b949e;
+  }
+  
+  .nav-link:hover {
+    color: #58a6ff;
+    background-color: #161b22;
+  }
+  
+  .nav-link.active {
+    color: #58a6ff;
+  }
+  
+  .nav-link.active::after {
+    background-color: #58a6ff;
+  }
+  
+  .rss-link {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .rss-link:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+  }
+}
+</style>
+<main class="page-content" aria-label="Content">
+      <div class="w">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">My Coding Journey: From Beginner to Developer</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-01-15T10:00:00+05:30" itemprop="datePublished">Jan 15, 2025
+      </time></p>
+  </header>
+
+  
+  <div class="post-tags">
+    <div class="tags-header">
+      <strong>Tags:</strong>
+      <a href="/tags/" class="all-tags-link">View all tags →</a>
+    </div>
+    <div class="tags-list">
+      
+        
+        <a href="/tags/#programming" class="tag-link">#programming</a>
+      
+        
+        <a href="/tags/#personal" class="tag-link">#personal</a>
+      
+        
+        <a href="/tags/#career" class="tag-link">#career</a>
+      
+        
+        <a href="/tags/#learning" class="tag-link">#learning</a>
+      
+    </div>
+  </div>
+  
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Starting my journey in programming has been one of the most rewarding experiences of my life. In this post, I want to share some of the key lessons I’ve learned along the way.</p>
+
+<h2 id="the-beginning">The Beginning</h2>
+
+<p>Like many developers, I started with simple “Hello World” programs. The excitement of seeing text appear on screen after writing just a few lines of code was incredible.</p>
+
+<h2 id="key-lessons-learned">Key Lessons Learned</h2>
+
+<ol>
+  <li><strong>Consistency beats intensity</strong> - Coding a little every day is better than marathon sessions</li>
+  <li><strong>Build projects</strong> - Theory is important, but building real projects teaches you the most</li>
+  <li><strong>Don’t be afraid to ask for help</strong> - The programming community is generally very supportive</li>
+  <li><strong>Read other people’s code</strong> - You learn different approaches and best practices</li>
+</ol>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>I’m excited to continue learning and sharing my experiences through this blog. Stay tuned for more posts about specific technologies, project walkthroughs, and coding tips!</p>
+
+<hr />
+
+<p><em>What was your first programming experience like? I’d love to hear about it in the comments below.</em></p>
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<style>
+.related-posts {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+.related-posts h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #24292e;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 0.5rem;
+}
+
+.related-posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-post-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.related-post-item:hover {
+  border-color: #0366d6;
+  box-shadow: 0 1px 3px rgba(3, 102, 214, 0.1);
+}
+
+.related-post-item:last-child {
+  margin-bottom: 0;
+}
+
+.related-post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.related-post-title {
+  display: block;
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 0.25rem;
+}
+
+.related-post-link:hover .related-post-title {
+  color: #0366d6;
+}
+
+.related-post-date {
+  font-size: 0.8rem;
+  color: #6a737d;
+  display: block;
+}
+
+.related-post-tags {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6a737d;
+}
+
+.related-tag {
+  color: #0366d6;
+  font-weight: 500;
+}
+</style>
+
+<div class="giscus-comments">
+  <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e1e4e8;">
+  
+  <h3>Comments</h3>
+  
+  <script src="https://giscus.app/client.js"
+          data-repo="your-username/your-repo-name"
+          data-repo-id="your-repo-id"
+          data-category="General"
+          data-category-id="your-category-id"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+
+<a class="u-url" href="/2025/01/15/my-coding-journey/" hidden></a>
+</article>
+
+<style>
+.post-tags {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.all-tags-link {
+  font-size: 0.8rem;
+  color: #6a737d;
+  text-decoration: none;
+}
+
+.all-tags-link:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-link {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.tag-link:hover {
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+}
+
+.giscus-comments {
+  margin-top: 2rem;
+}
+
+.giscus-comments h3 {
+  margin-bottom: 1rem;
+}
+</style>
+
+      </div>
+    </main>
+  </body>
+</html>

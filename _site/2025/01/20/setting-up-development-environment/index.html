@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Setting Up the Perfect Development Environment</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Setting Up the Perfect Development Environment" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace." />
+<meta property="og:description" content="A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace." />
+<link rel="canonical" href="http://localhost:4000/2025/01/20/setting-up-development-environment/" />
+<meta property="og:url" content="http://localhost:4000/2025/01/20/setting-up-development-environment/" />
+<meta property="og:site_name" content="Shivang Agrawal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-20T14:30:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Setting Up the Perfect Development Environment" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-20T14:30:00+05:30","datePublished":"2025-01-20T14:30:00+05:30","description":"A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace.","headline":"Setting Up the Perfect Development Environment","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/01/20/setting-up-development-environment/"},"url":"http://localhost:4000/2025/01/20/setting-up-development-environment/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Shivang Agrawal" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body a="auto"><nav class="site-nav">
+  <div class="nav-container">
+    <!-- Site Title/Logo -->
+    <div class="nav-brand">
+      <a href="/" class="site-title">Shivang Agrawal</a>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="/" class="nav-link ">Home</a>
+      
+      
+        
+          
+          
+            <a href="/about/" class="nav-link ">
+              About
+            </a>
+          
+        
+          
+          
+            <a href="/tags/" class="nav-link ">
+              Tags
+            </a>
+          
+        
+      
+      
+      <!-- RSS Feed -->
+      <a href="/feed.xml" class="nav-link rss-link" title="RSS Feed">
+        <span class="rss-icon">📡</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+.site-nav {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  margin-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #24292e;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #586069;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0366d6;
+  background-color: #f1f8ff;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #0366d6;
+}
+
+.rss-link {
+  padding: 0.25rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.rss-link:hover {
+  background-color: #0366d6;
+  border-color: #0366d6;
+}
+
+.rss-link:hover .rss-icon {
+  filter: brightness(0) invert(1);
+}
+
+.rss-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .nav-brand {
+    margin-right: 0;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .nav-link.active::after {
+    display: none;
+  }
+}
+
+/* Dark mode support (if theme supports it) */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background-color: #0d1117;
+    border-bottom-color: #30363d;
+  }
+  
+  .site-title {
+    color: #f0f6fc;
+  }
+  
+  .site-title:hover {
+    color: #58a6ff;
+  }
+  
+  .nav-link {
+    color: #8b949e;
+  }
+  
+  .nav-link:hover {
+    color: #58a6ff;
+    background-color: #161b22;
+  }
+  
+  .nav-link.active {
+    color: #58a6ff;
+  }
+  
+  .nav-link.active::after {
+    background-color: #58a6ff;
+  }
+  
+  .rss-link {
+    background-color: #21262d;
+    border-color: #30363d;
+  }
+  
+  .rss-link:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+  }
+}
+</style>
+<main class="page-content" aria-label="Content">
+      <div class="w">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Setting Up the Perfect Development Environment</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-01-20T14:30:00+05:30" itemprop="datePublished">Jan 20, 2025
+      </time></p>
+  </header>
+
+  
+  <div class="post-tags">
+    <div class="tags-header">
+      <strong>Tags:</strong>
+      <a href="/tags/" class="all-tags-link">View all tags →</a>
+    </div>
+    <div class="tags-list">
+      
+        
+        <a href="/tags/#tools" class="tag-link">#tools</a>
+      
+        
+        <a href="/tags/#productivity" class="tag-link">#productivity</a>
+      
+        
+        <a href="/tags/#setup" class="tag-link">#setup</a>
+      
+        
+        <a href="/tags/#development" class="tag-link">#development</a>
+      
+    </div>
+  </div>
+  
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>A well-configured development environment can significantly boost your productivity. Here’s my guide to setting up an efficient workspace.</p>
+
+<h2 id="essential-tools">Essential Tools</h2>
+
+<h3 id="code-editor">Code Editor</h3>
+<p>I recommend <strong>VS Code</strong> for its excellent extension ecosystem and built-in features:</p>
+<ul>
+  <li>Syntax highlighting</li>
+  <li>Integrated terminal</li>
+  <li>Git integration</li>
+  <li>Debugging support</li>
+</ul>
+
+<h3 id="terminal-setup">Terminal Setup</h3>
+<p>A good terminal setup includes:</p>
+<ul>
+  <li><strong>Oh My Zsh</strong> for enhanced shell experience</li>
+  <li><strong>Homebrew</strong> (macOS) or <strong>apt</strong> (Linux) for package management</li>
+  <li><strong>Git</strong> for version control</li>
+</ul>
+
+<h2 id="productivity-tips">Productivity Tips</h2>
+
+<ol>
+  <li><strong>Learn keyboard shortcuts</strong> - They save countless hours</li>
+  <li><strong>Use code snippets</strong> - Create templates for common patterns</li>
+  <li><strong>Set up linting</strong> - Catch errors before they become problems</li>
+  <li><strong>Automate repetitive tasks</strong> - Write scripts for common workflows</li>
+</ol>
+
+<h2 id="my-current-setup">My Current Setup</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># My favorite VS Code extensions</span>
+- Prettier
+- ESLint
+- GitLens
+- Bracket Pair Colorizer
+- Live Server
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The time invested in setting up your development environment pays dividends in increased productivity and reduced frustration. What tools do you find essential in your workflow?</p>
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<style>
+.related-posts {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+.related-posts h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #24292e;
+  border-bottom: 1px solid #e1e4e8;
+  padding-bottom: 0.5rem;
+}
+
+.related-posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-post-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.related-post-item:hover {
+  border-color: #0366d6;
+  box-shadow: 0 1px 3px rgba(3, 102, 214, 0.1);
+}
+
+.related-post-item:last-child {
+  margin-bottom: 0;
+}
+
+.related-post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.related-post-title {
+  display: block;
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 0.25rem;
+}
+
+.related-post-link:hover .related-post-title {
+  color: #0366d6;
+}
+
+.related-post-date {
+  font-size: 0.8rem;
+  color: #6a737d;
+  display: block;
+}
+
+.related-post-tags {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6a737d;
+}
+
+.related-tag {
+  color: #0366d6;
+  font-weight: 500;
+}
+</style>
+
+<div class="giscus-comments">
+  <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e1e4e8;">
+  
+  <h3>Comments</h3>
+  
+  <script src="https://giscus.app/client.js"
+          data-repo="your-username/your-repo-name"
+          data-repo-id="your-repo-id"
+          data-category="General"
+          data-category-id="your-category-id"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>
+
+<a class="u-url" href="/2025/01/20/setting-up-development-environment/" hidden></a>
+</article>
+
+<style>
+.post-tags {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+}
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.all-tags-link {
+  font-size: 0.8rem;
+  color: #6a737d;
+  text-decoration: none;
+}
+
+.all-tags-link:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-link {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.tag-link:hover {
+  background-color: #0366d6;
+  color: white;
+  text-decoration: none;
+}
+
+.giscus-comments {
+  margin-top: 2rem;
+}
+
+.giscus-comments h3 {
+  margin-bottom: 1rem;
+}
+</style>
+
+      </div>
+    </main>
+  </body>
+</html>
